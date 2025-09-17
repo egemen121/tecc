@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TECC Apps — Official Site</title>
+  <meta name="description" content="TECC GbR builds privacy-first mobile apps. Futmap is our location-based football collecting game." />
+  <meta name="theme-color" content="#16a34a" />
+  <meta property="og:title" content="TECC Apps" />
+  <meta property="og:description" content="TECC GbR builds privacy-first mobile apps. Futmap is our location-based football collecting game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://teccapps.com/" />
+  <style>
+    :root{
+      --bg:#0b0f14;          /* near-black */
+      --card:#0f1621;        /* dark slate */
+      --text:#e6f0e9;        /* off-white */
+      --muted:#a8b3ad;       /* muted text */
+      --accent:#16a34a;      /* green accent */
+      --accent-2:#2dd4bf;    /* teal accent for subtle details */
+      --border:rgba(255,255,255,.08);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(80vw 80vw at 80% -10%, rgba(45,212,191,.10), transparent 55%),
+        radial-gradient(70vw 70vw at -10% 20%, rgba(22,163,74,.12), transparent 50%),
+        var(--bg);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:8px 0 24px; border-bottom:1px solid var(--border);
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:36px;height:36px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      box-shadow:0 10px 24px rgba(22,163,74,.25);
+    }
+    nav a{margin-left:18px;color:var(--text);opacity:.9}
+    main{display:grid;gap:28px;padding:28px 0}
+    .hero{
+      padding:28px;border:1px solid var(--border);border-radius:var(--radius);
+      background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);
+    }
+    .hero h1{font-size:28px;line-height:1.2;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:860px){.cards{grid-template-columns:1fr 1fr}}
+    .card{
+      background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+      padding:22px; box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .card h2{margin:0 0 8px;font-size:20px}
+    .badge{
+      display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;
+      background:rgba(22,163,74,.15); color:var(--text); border:1px solid var(--border);
+      margin-left:6px;
+    }
+    .cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:12px;
+      background:var(--accent); color:#05140b; font-weight:600; border:0}
+    .cta:hover{filter:brightness(1.05)}
+    footer{
+      margin-top:28px;padding:18px 0;border-top:1px solid var(--border);
+      color:var(--muted);font-size:14px
+    }
+    ul.clean{margin:10px 0;padding-left:18px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <strong>TECC Apps</strong>
+      </div>
+      <nav aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/impressum.html">Imprint</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Intro">
+        <h1>We build privacy-first mobile experiences.</h1>
+        <p>TECC GbR is a small studio crafting apps and games with a focus on simplicity, performance, and fair play.</p>
+      </section>
+
+      <section class="cards" aria-label="Products">
+        <article class="card">
+          <h2>Futmap <span class="badge">MVP</span></h2>
+          <p>A location-based football collecting game. Explore your city, find packs, complete quests, and grow your collection.</p>
+          <ul class="clean">
+            <li>Daily quests that reset every 24 hours</li>
+            <li>Server-side anti-cheat & secure rewards</li>
+            <li>Lightweight, battery-friendly map rendering</li>
+          </ul>
+          <a class="cta" href="mailto:support@teccapps.com">Contact support</a>
+        </article>
+
+        <article class="card">
+          <h2>About TECC</h2>
+          <p>Legal entity: <strong>TECC GbR</strong> (Germany). We keep our sites minimal: no third-party analytics, no cookies, and no trackers.</p>
+          <p>Business contact: <a href="mailto:support@teccapps.com">support@teccapps.com</a></p>
+        </article>
+      </section>
+
+      <section class="card" aria-label="Disclaimers">
+        <h2>Legal & brand disclaimers</h2>
+        <p class="muted">
+          Futmap is an independent project. We are not affiliated with or endorsed by FIFA, national leagues, clubs, or players’ associations.  
+          The MVP uses last names and modified league/club names only; no official logos or player photos are used.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> TECC GbR — All rights reserved.</span>
+      <span style="float:right">
+        <a href="/privacy.html">Privacy</a> · <a href="/impressum.html">Imprint</a>
+      </span>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
